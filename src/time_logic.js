@@ -44,7 +44,7 @@ const calculator = () => {
         };
     };
 
-    let yearsInHours = (years * 8760) + (leapDays * 24);
+    let yearsInHours = (years * 8760);
     let monthsInHours = monthArray[monthNumber] * 24;
     let daysInHours = days * 24;
 
