@@ -45,7 +45,7 @@ const calculator = () => {
         }
     }
 
-    let hours = Math.floor(hoursSinceDeath - yearsInHours - monthsInHours);
+    let hours = (Math.floor(hoursSinceDeath - yearsInHours - monthsInHours)) - 4;
     let mins = Math.floor(((hoursSinceDeath - yearsInHours - monthsInHours) - hours) * 60);
     
     return `Yes! Margaret Thatcher is indeed dead. She has been dead for ${years} years, ${months} month(s), ${days} day(s), ${hours} hour(s), and ${mins} minute(s).`
