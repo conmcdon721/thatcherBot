@@ -16,7 +16,7 @@ const options = {
 		password: process.env.OAUTH_TOKEN
 	},
 	channels: [ process.env.CHANNEL_NAME ]
-}
+};
 
 const client = new tmi.Client(options);
 
@@ -26,5 +26,5 @@ client.on('message', (channel, userstate, message, self) => {
 	if(self) return;
 	if(message.toLowerCase() === '!isthatcherdead') {
 		client.say(channel, `@${userstate.username}, ${calculator.calculator()}`);
-	}
+	};
 });
