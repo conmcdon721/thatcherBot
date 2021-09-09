@@ -21,7 +21,7 @@ const calculator = () => {
 
     /* ------------------------------------------------------------------------------------------------------------------------------------------------ */
     
-    let milliSinceDeath = today - maggieDeathDate;
+    let milliSinceDeath = today - maggieDeathDate - 14400000;
 
     let hoursSinceDeath = ((milliSinceDeath / 1000) / 60) / 60;
     let daysSinceDeath = (((milliSinceDeath / 1000) / 60) / 60) / 24;
