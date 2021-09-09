@@ -44,12 +44,12 @@ const calculator = () => {
         };
     };
 
-    let yearsInHours = (years * 8760);
-    let monthsInHours = monthArray[monthNumber] * 24;
-    let daysInHours = days * 24;
+    let yearsInHours = (years * 8760) + (leapDays * 24);
+    let monthsInHours = leftoverDays * 24;
+    // IF BREAKING, UNCOMMENT THIS - let daysInHours = days * 24; - AND SUBTRACT IT FROM hoursSinceDeath
 
-    let hours = Math.floor(hoursSinceDeath - yearsInHours - monthsInHours - daysInHours);
-    let mins = Math.floor(((hoursSinceDeath - yearsInHours - monthsInHours - daysInHours) - hours) * 60);
+    let hours = Math.floor(hoursSinceDeath - yearsInHours - monthsInHours);
+    let mins = Math.floor(((hoursSinceDeath - yearsInHours - monthsInHours) - hours) * 60);
 
     return `Yes! Margaret Thatcher is indeed dead. She has been dead for ${years} years, ${months} month(s), ${days} day(s), ${hours} hour(s), and ${mins} minute(s).`;
 };
