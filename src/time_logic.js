@@ -29,17 +29,15 @@ const calculator = () => {
     const monthArray = [30, 61, 91, 122, 153, 183, 214, 244, 275, 306, 334];
 
     let years = Math.floor(daysSinceDeath / 365);
-    let leftoverDays = (Math.floor(daysSinceDeath % 365)) - leapDays;
+    let leftoverDays = daysSinceDeath % 365;
 
-    let monthNumber;
     let months;
     let days;
 
     for (let i = 0; i < monthArray.length; i++) {
-        if (leftoverDays <= monthArray[i]) {
-            monthNumber = i;
-            months = i + 1;
-            days = leftoverDays - monthArray[i];
+        if (leftoverDays < monthArray[i]) {
+            months = i - 1;
+            days = leftoverDays - monthArray[months - 1];
             break;
         };
     };
