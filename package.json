@@ -1,6 +1,6 @@
 {
   "name": "thatcherbot",
-  "version": "0.0.0",
+  "version": "1.2.0",
   "description": "Is Margaret Thatcher dead?",
   "main": "src",
   "scripts": {
@@ -11,7 +11,6 @@
   "license": "ISC",
   "dependencies": {
     "dotenv": "^9.0.2",
-    "esm": "^3.2.25",
     "tmi.js": "^1.8.3"
   }
 }

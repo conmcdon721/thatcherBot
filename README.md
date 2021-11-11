@@ -1,2 +1,3 @@
 # thatcherBot
-For years, users on the internet have been racking their brains trying to remember if former U.K. Prime Minister Margaret Thatcher is still alive. "I could have sworn she died," some say, while others cry out in reply "I just saw her on the news, she can't be dead!" Many programmers have attempted to create a solution to this problem that satisfies our curiosity, but none hitherto have succeeded. Until now. ThatcherBot is a bot for Twitch chat that tells you if/exactly how long it's been since previous U.K. Prime Minister Margaret Thatcher passed away. Just one "!isthatcherdead" command and all your worries will disappear!
+
+A Twitch chatbot that tells you if/exactly how long it's been since U.K. Prime Minister Margaret Thatcher passed away.
